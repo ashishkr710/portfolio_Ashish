@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} Ashish Kumar. All rights reserved.
           </p>
           <p className="text-text-muted text-sm flex items-center gap-2">
-            Built with <span className="text-red-500">❤️</span> using React & Tailwind
+            {/* Built with <span className="text-red-500">❤️</span> using React & Tailwind */}
           </p>
         </div>
       </div>

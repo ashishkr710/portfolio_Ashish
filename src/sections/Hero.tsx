@@ -67,9 +67,9 @@ const Hero: React.FC = () => {
             <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
               <a href="#projects">View Projects</a>
             </Button>
-            <Button variant="outline" size="lg" icon={<Download size={20} />}>
+            {/* <Button variant="outline" size="lg" icon={<Download size={20} />}>
               <a href="/Ashish_Kumar_Resume.pdf" download>Resume</a>
-            </Button>
+            </Button> */}
           </motion.div>
 
           {/* Social Icons */}
