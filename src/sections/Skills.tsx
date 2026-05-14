@@ -41,13 +41,14 @@ const Skills: React.FC = () => {
                         <span className="text-xs font-bold text-primary">{skill.level}%</span>
                       </div>
                       <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: 0.5 + (sIdx * 0.1) }}
-                          viewport={{ once: true }}
-                          className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                        />
+                        <div className="h-full bg-gradient-to-r from-primary to-secondary rounded-full">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            whileInView={{ width: "100%" }}
+                            transition={{ duration: 1, delay: 0.5 + (sIdx * 0.1) }}
+                            viewport={{ once: true }}
+                          />
+                        </div>
                       </div>
                     </div>
                   ))}

@@ -89,20 +89,21 @@ const Projects: React.FC = () => {
       </div>
 
       {/* Call to action */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="mt-20 text-center"
-      >
-        <p className="text-text-secondary mb-6">Want to see more of my work?</p>
-        <a
-          href="https://github.com"
-          className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300"
+      <div className="mt-20 text-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
         >
-          Browse GitHub Repositories <Github size={20} />
-        </a>
-      </motion.div>
+          <p className="text-text-secondary mb-6">Want to see more of my work?</p>
+          <a
+            href="https://github.com"
+            className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300"
+          >
+            Browse GitHub Repositories <Github size={20} />
+          </a>
+        </motion.div>
+      </div>
     </Section>
   );
 };

@@ -78,9 +78,9 @@ const Navbar: React.FC = () => {
             <a href="https://www.linkedin.com/in/ashishkr710" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            {/* <a href="https://x.com/Aktherock121" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-colors">
+            <a href="https://x.com/Aktherock121" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-colors">
               <XIcon size={20} />
-            </a> */}
+            </a>
           </div>
         </div>
 
