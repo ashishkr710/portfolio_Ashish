@@ -78,9 +78,9 @@ const Projects: React.FC = () => {
                       <ExternalLink size={20} />
                     </a>
                   )}
-                  <button className="ml-auto text-xs font-bold text-primary hover:text-accent underline underline-offset-4">
+                  {/* <button className="ml-auto text-xs font-bold text-primary hover:text-accent underline underline-offset-4">
                     Learn More
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
