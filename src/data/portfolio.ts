@@ -32,8 +32,10 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Node.js', level: 85, icon: 'Terminal' },
       { name: 'Spring Boot', level: 80, icon: 'Cpu' },
+      { name: 'NestJS', level: 70, icon: 'Coffee' },
       { name: 'Express.js', level: 85, icon: 'Server' },
       { name: 'REST APIs', level: 90, icon: 'Globe' },
+
     ],
   },
   {
