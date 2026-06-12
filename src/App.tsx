@@ -4,11 +4,13 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import LeetCodeDashboard from './sections/LeetCodeDashboard';
 import Experience from './sections/Experience';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import CursorGlow from './components/CursorGlow';
 import ScrollProgress from './components/ScrollProgress';
+import BlackHoleEffect from './components/BlackHoleEffect';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -57,18 +59,22 @@ function App() {
           >
             <ScrollProgress />
             <CursorGlow />
+            <BlackHoleEffect />
             <Navbar />
-            
-            <main>
-              <Hero />
-              <About />
-              <Skills />
-              <Projects />
-              <Experience />
-              <Contact />
-            </main>
-            
-            <Footer />
+
+            <div style={{ filter: 'url(#blackhole-lens)' }} className="will-change-[filter]">
+              <main>
+                <Hero />
+                <About />
+                <Skills />
+                <Projects />
+                <LeetCodeDashboard />
+                <Experience />
+                <Contact />
+              </main>
+
+              <Footer />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
